@@ -10,7 +10,7 @@ function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [favorites, setFavorites] = useState([]);
 
-  // Load favorites from localStorage on mount
+ 
   useEffect(() => {
     const storedFavs = JSON.parse(localStorage.getItem("favorites")) || [];
     setFavorites(storedFavs);
